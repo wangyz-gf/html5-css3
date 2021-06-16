@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>3D转换模块</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            .father{
+                width: 200px;
+                height: 200px;
+                background: red;
+                border: 1px solid #000000;
+                margin: 100px auto;
+                perspective: 500px;
+                /*transform: rotateY(0deg);*/
+                /*让元素呈现3D效果*/
+                transform-style: preserve-3d;
+            }
+            .son{
+                width: 100px;
+                height: 100px;
+                background: blue;
+                border: 1px solid #000000;
+                margin: 0 auto;
+                margin-top: 50px;
+                transform: rotateY(45deg);
+            }
+            
+        </style>
+    </head>
+    <body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+    </body>
+</html>

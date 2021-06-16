@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D轮播图</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            width: 200px;
+            height: 200px;
+            /*border: 1px solid #000000;*/
+            box-sizing: border-box;
+            margin: 100px auto;
+            position: relative;
+            transform: rotateY(0deg) rotateX(0deg);
+            transform-style: preserve-3d;
+            /*transform: scale(1.5,1);*/
+
+        }
+        ul li{
+            width: 200px;
+            height: 200px;
+            font-size: 60px;
+            text-align: center;
+            line-height: 200px;
+            list-style: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        ul li img{
+            width: 200px;
+            height: 200px;
+        }
+        ul li:nth-child(1){
+            background: red;
+            transform: rotateX(90deg) translateZ(100px) scale(2,1);
+        }
+        ul li:nth-child(2){
+            background: green;
+            transform: rotateX(180deg) translateZ(100px) scale(2,1);
+        }
+        ul li:nth-child(3){
+            background: blue;
+            transform: rotateX(270deg) translateZ(100px) scale(2,1);
+        }
+        ul li:nth-child(4){
+            background: yellow;
+            transform: rotateX(360deg) translateZ(100px) scale(2,1);
+        }
+        ul li:nth-child(5){
+            background: purple;
+            transform: rotateY(-90deg) translateZ(200px);
+        }
+        ul li:nth-child(6){
+            background: pink;
+            transform: rotateY(90deg) translateZ(200px);
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>
+        <img src="../images/1.jpg">
+    </li>
+    <li>
+        <img src="../images/2.jpeg">
+    </li>
+    <li>
+        <img src="../images/3.jpeg">
+    </li>
+    <li>
+        <img src="../images/4.jpg">
+    </li>
+    <li>
+        <img src="../images/5.jpg">
+    </li>
+    <li>
+        <img src="../images/6.jpg">
+    </li>
+
+</ul>
+</body>
+</html>
